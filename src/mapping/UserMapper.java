@@ -13,18 +13,18 @@ import java.util.List;
  */
 public interface UserMapper {
 
-    @Insert ("insert into user (name, age) values(#{name}, #{age})")
+    @Insert("insert into user (name, age) values(#{name}, #{age})")
     public int add(User user);
 
-    @Delete ("delete from user where id = #{id}")
+    @Delete("delete from user where id = #{id}")
     public int deleteById(int id);
 
-    @Update ("update user set name = #{name}, age = #{age} where id = #{id}")
+    @Update("update user set name = #{name}, age = #{age} where id = #{id}")
     public int updateById(User user);
 
-    @Select ("select * from user where id = #{id}")
+    @Select("select * from user where id = #{id}")
     public User getById(int id);
 
-    @Select ("select * from user")
+    @Select("select * from user")
     public List<User> getAll();
 }
