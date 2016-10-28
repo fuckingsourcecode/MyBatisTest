@@ -25,4 +25,5 @@
     <select id="getAllUsers" parameterType="data.User">
         SELECT * FROM USER
     </select>
+
 </mapper>

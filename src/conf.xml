@@ -16,7 +16,7 @@
     <mappers>
         <!--<mapper resource="mapping/userMapper.xml"/>-->
         <mapper resource="mapping/CRUDMapper.xml"/>
-        <mapper class="mapping.UserMapper"></mapper>
+        <mapper class="src.mapping.UserMapper"></mapper>
         <!--<mapper></mapper>-->
     </mappers>
 </configuration>
